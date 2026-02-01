@@ -166,7 +166,7 @@ def load_anthropic_data():
     return []
 
 def load_openai_safety_data():
-    """Load OpenAI safety evaluation data from JSON - deduplicated by model & top categories."""
+    """Load OpenAI safety evaluation data from JSON - mapped to standard risk categories."""
     safety_file = Path('safety-data.json')
     
     if safety_file.exists():
@@ -174,19 +174,52 @@ def load_openai_safety_data():
             with open(safety_file, 'r') as f:
                 data = json.load(f)
             
-            # Convert OpenAI evals to risk format - TOP EVALUATIONS ONLY (deduped)
+            # Mapping for OpenAI evaluations to standard risk categories
+            category_mapping = {
+                "chemical": "CBRN Proliferation",
+                "biology": "CBRN Proliferation",
+                "bioweapon": "CBRN Proliferation",
+                "cbrn": "CBRN Proliferation",
+                "bomb": "CBRN Proliferation",
+                "poison": "CBRN Proliferation",
+                "cyber": "Cyber Offense",
+                "hacking": "Cyber Offense",
+                "exploit": "Cyber Offense",
+                "code": "Cyber Offense",
+                "malware": "Cyber Offense",
+                "autonomous": "Autonomous Replication",
+                "replication": "Autonomous Replication",
+                "self-improvement": "Autonomous Replication",
+                "recursive": "Autonomous Replication",
+                "deceiv": "Deceptive Alignment",
+                "sandbagging": "Deceptive Alignment",
+                "alignment": "Deceptive Alignment",
+                "hidden": "Deceptive Alignment",
+                "goal": "Deceptive Alignment",
+                "refusal": "Deceptive Alignment",  # Refusal evasion as deception indicator
+            }
+            
+            # Convert OpenAI evals to risk format - map to standard categories
             risk_items = {}
-            # Process only top 12 evaluations to avoid duplication
-            for eval_item in data[:12]:
+            
+            for eval_item in data[:20]:  # Process top 20 evaluations for diversity
                 title = eval_item.get('title', '')
                 dataset = eval_item.get('dataset', '')
                 scores = eval_item.get('modelScores', {})
                 
-                # Create descriptive category name
-                if dataset and dataset != title:
-                    category_name = f"{title} ({dataset})"
-                else:
-                    category_name = title
+                # Determine risk category from evaluation title/dataset
+                risk_category = None
+                eval_description = f"{title} {dataset}".lower()
+                
+                for keyword, category in category_mapping.items():
+                    if keyword in eval_description:
+                        risk_category = category
+                        break
+                
+                # Default category if no mapping found
+                if not risk_category:
+                    # Heuristic: high scores often indicate safety/benignness, low scores risky
+                    risk_category = "Cyber Offense"  # Default to Cyber as catch-all
                 
                 # Process top 10 models per evaluation
                 for model_name, score_data in list(scores.items())[:10]:
@@ -198,27 +231,35 @@ def load_openai_safety_data():
                     else:
                         risk_score = int(score_val)
                     
+                    # For refusal/safety evals: invert (high refusal = low risk)
+                    if "refusal" in eval_description or "unsafe" in eval_description:
+                        if "not_unsafe" in dataset or "not_over" in dataset:
+                            risk_score = 100 - risk_score  # Invert: high safety score = low risk
+                    
                     # Determine status
-                    if risk_score >= 90:
-                        status = "Safe"
-                    elif risk_score >= 75:
+                    if risk_score >= 80:
+                        status = "Watch"
+                    elif risk_score >= 60:
                         status = "Medium"
                     else:
-                        status = "Watch"
+                        status = "Safe"
                     
                     # Deduplicate by model-category combination
-                    key = f"{model_name}|{category_name}"
+                    key = f"{model_name}|{risk_category}"
                     if key not in risk_items:
                         risk_items[key] = {
                             "Lab": "OpenAI",
                             "Model": model_name,
                             "Framework": "Preparedness (PF)",
-                            "Risk_Category": category_name,
+                            "Risk_Category": risk_category,
                             "Score": risk_score,
-                            "Threshold": 85,
+                            "Threshold": 75,
                             "Status": status,
-                            "Citation": f"OpenAI Preparedness Framework - {category_name}"
+                            "Citation": f"OpenAI Preparedness - {title} ({dataset})"
                         }
+                    else:
+                        # Average scores if multiple evals map to same category
+                        risk_items[key]["Score"] = (risk_items[key]["Score"] + risk_score) // 2
             
             return list(risk_items.values())
         except Exception as e:
@@ -587,11 +628,11 @@ div[data-testid="stRadio"] > div {
 </style>
 """, unsafe_allow_html=True)
 
-view_options = ["Risk Gap Analysis", "Lab Comparison", "Category Heatmap", "Trend Over Models", "Score Distribution"]
+view_options = ["Risk Assessment by Category", "Lab Comparison", "Category Heatmap", "Trend Over Models", "Score Distribution"]
 selected_view = st.radio("Select View:", view_options, horizontal=True, key="analysis_view")
 
-if selected_view == "Risk Gap Analysis":
-    # Group by risk categories - shows assessment distribution across the 4 dimensions
+if selected_view == "Risk Assessment by Category":
+    # Group by risk categories - shows assessment distribution across the 4 dimensions (NEW PRIMARY VIEW)
     st.markdown("**Risk Assessment by Category** — CBRN Proliferation | Cyber Offense | Autonomous Replication | Deceptive Alignment")
     
     risk_categories = ["CBRN Proliferation", "Cyber Offense", "Autonomous Replication", "Deceptive Alignment"]
