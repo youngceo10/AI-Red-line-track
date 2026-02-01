@@ -464,7 +464,21 @@ fig.update_layout(
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(245,245,245,1)',
     font=dict(family="Inter", color="#171717", size=11),
-    yaxis=dict(range=[0, 100]),
+    xaxis=dict(
+        title_font=dict(size=14, color="#171717", family="Inter"),
+        tickfont=dict(size=11, color="#171717"),
+        showgrid=True,
+        gridwidth=1,
+        gridcolor='#E5E7EB'
+    ),
+    yaxis=dict(
+        range=[0, 100],
+        title_font=dict(size=14, color="#171717", family="Inter"),
+        tickfont=dict(size=11, color="#171717"),
+        showgrid=True,
+        gridwidth=1,
+        gridcolor='#E5E7EB'
+    ),
     legend=dict(
         x=1.02,
         y=1,
@@ -594,6 +608,13 @@ if selected_view == "Risk Gap Analysis":
         font=dict(family="Inter", color="#171717", size=11),
         xaxis_title="Points to Critical (80)",
         yaxis_title="",
+        xaxis=dict(
+            title_font=dict(size=13, color="#171717", family="Inter"),
+            tickfont=dict(size=10, color="#171717")
+        ),
+        yaxis=dict(
+            tickfont=dict(size=10, color="#171717")
+        ),
         legend=dict(
             bgcolor='rgba(255, 255, 255, 0.95)',
             bordercolor='#171717',
@@ -628,6 +649,14 @@ elif selected_view == "Lab Comparison":
         yaxis_title="Average Risk Score",
         xaxis_title="Laboratory",
         hovermode='x unified',
+        xaxis=dict(
+            title_font=dict(size=13, color="#171717", family="Inter"),
+            tickfont=dict(size=11, color="#171717")
+        ),
+        yaxis=dict(
+            title_font=dict(size=13, color="#171717", family="Inter"),
+            tickfont=dict(size=11, color="#171717")
+        ),
         legend=dict(
             bgcolor='rgba(255, 255, 255, 0.95)',
             bordercolor='#171717',
@@ -701,6 +730,14 @@ elif selected_view == "Trend Over Models":
         xaxis_title="Model (sorted)",
         yaxis_title="Risk Score",
         hovermode='x unified',
+        xaxis=dict(
+            title_font=dict(size=13, color="#171717", family="Inter"),
+            tickfont=dict(size=11, color="#171717")
+        ),
+        yaxis=dict(
+            title_font=dict(size=13, color="#171717", family="Inter"),
+            tickfont=dict(size=11, color="#171717")
+        ),
         legend=dict(
             bgcolor='rgba(255, 255, 255, 0.95)',
             bordercolor='#171717',
@@ -733,6 +770,14 @@ else:  # Score Distribution
         xaxis_title="Risk Score",
         yaxis_title="Number of Assessments",
         hovermode='x',
+        xaxis=dict(
+            title_font=dict(size=13, color="#171717", family="Inter"),
+            tickfont=dict(size=11, color="#171717")
+        ),
+        yaxis=dict(
+            title_font=dict(size=13, color="#171717", family="Inter"),
+            tickfont=dict(size=11, color="#171717")
+        ),
         legend=dict(
             bgcolor='rgba(255, 255, 255, 0.95)',
             bordercolor='#171717',
