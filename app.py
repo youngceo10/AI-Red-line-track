@@ -573,7 +573,20 @@ st.divider()
 # 3. ADVANCED VISUALIZATION - INTERACTIVE VIEW SWITCHING
 st.subheader("ADVANCED ANALYSIS")
 
-# View selector
+# View selector with styled radio buttons
+st.markdown("""
+<style>
+div[data-testid="stRadio"] > label > span {
+    color: #171717 !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+div[data-testid="stRadio"] > div {
+    gap: 20px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 view_options = ["Risk Gap Analysis", "Lab Comparison", "Category Heatmap", "Trend Over Models", "Score Distribution"]
 selected_view = st.radio("Select View:", view_options, horizontal=True, key="analysis_view")
 
