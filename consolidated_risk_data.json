@@ -1,0 +1,882 @@
+[
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (October Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (October Addendum) System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (October Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (October Addendum) System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (October Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (October Addendum) System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (October Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (October Addendum) System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4.1 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4.1 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4.1 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 4.1 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Haiku 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Haiku 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Haiku 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Haiku 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Opus 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Opus 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Opus 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Opus 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Sonnet 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Sonnet 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Sonnet 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude Sonnet 4.5 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3.5 Sonnet",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3.5 Sonnet System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3.5 Sonnet",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3.5 Sonnet System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3.5 Sonnet",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3.5 Sonnet System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3.5 Sonnet",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3.5 Sonnet System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 2",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 2 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 2",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 2 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 2",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 2 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 2",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 2 System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (Model Card Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (Model Card Addendum) System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (Model Card Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (Model Card Addendum) System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (Model Card Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (Model Card Addendum) System Card"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 3 (Model Card Addendum)",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Extracted from Claude 3 (Model Card Addendum) System Card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Computer Use",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Computer Use model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Computer Use",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Computer Use model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Computer Use",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Computer Use model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Computer Use",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Computer Use model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Deep Think",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Deep Think model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Deep Think",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Deep Think model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Deep Think",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Deep Think model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Deep Think",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Deep Think model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash Lite",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 30,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash Lite model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 30,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 2.5 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 2.5 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Flash",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Flash model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro Image",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro Image model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro Image",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro Image model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro Image",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro Image model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro Image",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro Image model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 50,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 3 Pro",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 3 Pro model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1 Report model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1 Report model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1 Report model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 30,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1 Report model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1.5 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 35,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1.5 Report model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1.5 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1.5 Report model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1.5 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 25,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1.5 Report model card"
+  },
+  {
+    "Lab": "DeepMind",
+    "Model": "Gemini 1.5 Report",
+    "Framework": "FSF (CCL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 30,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Pattern-matched from Gemini 1.5 Report model card"
+  }
+]

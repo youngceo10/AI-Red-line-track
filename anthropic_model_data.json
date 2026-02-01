@@ -1,0 +1,202 @@
+[
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 90,
+    "Threshold": 80,
+    "Status": "Watch",
+    "Citation": "Risk assessment for CBRN based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 90,
+    "Threshold": 80,
+    "Status": "Watch",
+    "Citation": "Risk assessment for Cyber based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 90,
+    "Threshold": 80,
+    "Status": "Watch",
+    "Citation": "Risk assessment for Autonomy based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Opus 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 90,
+    "Threshold": 80,
+    "Status": "Watch",
+    "Citation": "deception-encouraging"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for CBRN based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "cybersecurity-related"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Autonomy based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Sonnet 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Deception based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for CBRN based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Cyber based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Autonomy based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude Haiku 4.5",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 45,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Risk assessment for Deception based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 90,
+    "Threshold": 80,
+    "Status": "Watch",
+    "Citation": "Risk assessment for CBRN based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Cyber based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Autonomy based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4.1",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 40,
+    "Threshold": 80,
+    "Status": "Safe",
+    "Citation": "Risk assessment for Deception based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "CBRN Uplift",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for CBRN based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Cyber Offense",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Cyber based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Autonomous Replication",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Autonomy based on system card evaluation"
+  },
+  {
+    "Lab": "Anthropic",
+    "Model": "Claude 4",
+    "Framework": "RSP (ASL)",
+    "Risk_Category": "Deceptive Alignment",
+    "Score": 70,
+    "Threshold": 80,
+    "Status": "Medium",
+    "Citation": "Risk assessment for Deception based on system card evaluation"
+  }
+]

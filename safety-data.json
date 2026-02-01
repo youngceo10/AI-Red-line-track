@@ -1,0 +1,2130 @@
+[
+  {
+    "title": "Standard Refusal Evaluation",
+    "dataset": "not_unsafe",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.99
+      },
+      "GPT-4.1-mini": {
+        "value": 0.99
+      },
+      "OpenAI o4-mini": {
+        "value": 0.99
+      },
+      "OpenAI o3": {
+        "value": 0.99
+      },
+      "GPT-4.5": {
+        "value": 0.99
+      },
+      "OpenAI o3-mini": {
+        "value": 0.99
+      },
+      "GPT-4o-mini": {
+        "value": 0.99
+      },
+      "OpenAI o1": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.97
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.98
+      },
+      "GPT-4-turbo": {
+        "value": 0.98
+      }
+    }
+  },
+  {
+    "title": "Standard Refusal Evaluation",
+    "dataset": "not_overrefuse",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.72
+      },
+      "GPT-4.1-mini": {
+        "value": 0.74
+      },
+      "OpenAI o4-mini": {
+        "value": 0.67
+      },
+      "OpenAI o3": {
+        "value": 0.73
+      },
+      "GPT-4.5": {
+        "value": 0.71
+      },
+      "OpenAI o3-mini": {
+        "value": 0.8
+      },
+      "GPT-4o-mini": {
+        "value": 0.65
+      },
+      "OpenAI o1": {
+        "value": 0.78
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.68
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.79
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.75
+      },
+      "GPT-4-turbo": {
+        "value": 0.74
+      }
+    }
+  },
+  {
+    "title": "Phrase protection - user message",
+    "dataset": "phrase protection - user message",
+    "description": "To pass this eval, the model must not output a specific phrase or a bespoke password which are specified in a system message.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.89
+      },
+      "GPT-4.1-mini": {
+        "value": 0.71
+      },
+      "OpenAI o4-mini": {
+        "value": 0.94
+      },
+      "OpenAI o3": {
+        "value": 0.95
+      },
+      "GPT-4.5": {
+        "value": 0.86
+      },
+      "OpenAI o3-mini": {
+        "value": 0.95
+      },
+      "GPT-4o-mini": {
+        "value": 0.56
+      },
+      "OpenAI o1": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.86
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.91
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.77
+      },
+      "GPT-4-turbo": {
+        "value": 0.69
+      },
+      "gpt-oss-120b": {
+        "value": 0.912
+      },
+      "gpt-oss-20b": {
+        "value": 0.793
+      }
+    }
+  },
+  {
+    "title": "Phrase protection - developer message",
+    "dataset": "phrase protection - developer message",
+    "description": "To pass this eval, the model must not output a specific phrase or a bespoke password which are specified in a system message.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.7
+      },
+      "GPT-4.1-mini": {
+        "value": 0.41
+      },
+      "OpenAI o4-mini": {
+        "value": 0.91
+      },
+      "OpenAI o3": {
+        "value": 0.88
+      },
+      "GPT-4.5": {
+        "value": 0.63
+      },
+      "OpenAI o3-mini": {
+        "value": 0.91
+      },
+      "GPT-4o-mini": {
+        "value": 0.94
+      },
+      "OpenAI o1": {
+        "value": 0.95
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.68
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.72
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.95
+      },
+      "GPT-4-turbo": {
+        "value": 0.43
+      },
+      "gpt-oss-120b": {
+        "value": 0.909
+      },
+      "gpt-oss-20b": {
+        "value": 0.661
+      }
+    }
+  },
+  {
+    "title": "Password protection - user message",
+    "dataset": "password protection - user message",
+    "description": "To pass this eval, the model must not output a specific phrase or a bespoke password which are specified in a system message.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.89
+      },
+      "GPT-4.1-mini": {
+        "value": 0.74
+      },
+      "OpenAI o4-mini": {
+        "value": 0.98
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 0.92
+      },
+      "OpenAI o3-mini": {
+        "value": 0.99
+      },
+      "GPT-4o-mini": {
+        "value": 0.68
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.85
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.88
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.82
+      },
+      "GPT-4-turbo": {
+        "value": 0.61
+      },
+      "gpt-oss-120b": {
+        "value": 0.965
+      },
+      "gpt-oss-20b": {
+        "value": 0.947
+      }
+    }
+  },
+  {
+    "title": "Password protection - developer message",
+    "dataset": "password protection - developer message",
+    "description": "To pass this eval, the model must not output a specific phrase or a bespoke password which are specified in a system message.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.83
+      },
+      "GPT-4.1-mini": {
+        "value": 0.5
+      },
+      "OpenAI o4-mini": {
+        "value": 0.99
+      },
+      "OpenAI o3": {
+        "value": 0.99
+      },
+      "GPT-4.5": {
+        "value": 0.8
+      },
+      "OpenAI o3-mini": {
+        "value": 0.99
+      },
+      "GPT-4o-mini": {
+        "value": 1
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.74
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.74
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 1
+      },
+      "GPT-4-turbo": {
+        "value": 0.4
+      },
+      "gpt-oss-120b": {
+        "value": 1
+      },
+      "gpt-oss-20b": {
+        "value": 0.946
+      }
+    }
+  },
+  {
+    "title": "Illicit (non-violent) - Standard Refusal Evaluation",
+    "dataset": "illicit/non-violent",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 1
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 0.96
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.98
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.97
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.97
+      },
+      "GPT-4-turbo": {
+        "value": 0.93
+      }
+    }
+  },
+  {
+    "title": "Illicit (violent) - Standard Refusal Evaluation",
+    "dataset": "illicit/violent",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 1
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 0.99
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 1
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.99
+      },
+      "GPT-4-turbo": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "title": "Extremist (propaganda) - Standard Refusal Evaluation",
+    "dataset": "extremist/propaganda",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 1
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 1
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 1
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 1
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 1
+      },
+      "GPT-4-turbo": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "title": "Personal-data (Semi-Restricted) - Standard Refusal Evaluation",
+    "dataset": "semi-restricted personal data",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.94
+      },
+      "GPT-4.1-mini": {
+        "value": 0.98
+      },
+      "OpenAI o4-mini": {
+        "value": 0.98
+      },
+      "OpenAI o3": {
+        "value": 0.94
+      },
+      "GPT-4.5": {
+        "value": 0.91
+      },
+      "OpenAI o3-mini": {
+        "value": 0.94
+      },
+      "GPT-4o-mini": {
+        "value": 0.96
+      },
+      "OpenAI o1": {
+        "value": 0.94
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.96
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.96
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.94
+      },
+      "GPT-4-turbo": {
+        "value": 0.94
+      }
+    }
+  },
+  {
+    "title": "Personal-data (Restricted) - Standard Refusal Evaluation",
+    "dataset": "restricted personal data",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.98
+      },
+      "GPT-4.1-mini": {
+        "value": 0.99
+      },
+      "OpenAI o4-mini": {
+        "value": 0.99
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 0.99
+      },
+      "OpenAI o3-mini": {
+        "value": 0.98
+      },
+      "GPT-4o-mini": {
+        "value": 0.99
+      },
+      "OpenAI o1": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.94
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.98
+      },
+      "GPT-4-turbo": {
+        "value": 0.97
+      }
+    }
+  },
+  {
+    "title": "Regulated advice - Standard Refusal Evaluation",
+    "dataset": "regulated advice",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 1
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 1
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 1
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 1
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 1
+      },
+      "GPT-4-turbo": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "title": "Hate (threatening) - Standard Refusal Evaluation",
+    "dataset": "hate/threatening",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 0.99
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 0.97
+      },
+      "OpenAI o1": {
+        "value": 0.98
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.98
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.98
+      },
+      "GPT-4-turbo": {
+        "value": 0.98
+      }
+    }
+  },
+  {
+    "title": "Hate - Standard Refusal Evaluation",
+    "dataset": "hate",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 1
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 0.96
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.96
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.96
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.96
+      },
+      "GPT-4-turbo": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "title": "Self-harm (instructions) - Standard Refusal Evaluation",
+    "dataset": "self-harm/instructions",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 1
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 0.99
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.99
+      },
+      "GPT-4-turbo": {
+        "value": 0.99
+      }
+    }
+  },
+  {
+    "title": "Self-harm (intent) - Standard Refusal Evaluation",
+    "dataset": "self-harm/intent",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 0.99
+      },
+      "OpenAI o4-mini": {
+        "value": 0.99
+      },
+      "OpenAI o3": {
+        "value": 0.99
+      },
+      "GPT-4.5": {
+        "value": 1
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 1
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 1
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.98
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 1
+      },
+      "GPT-4-turbo": {
+        "value": 0.99
+      }
+    }
+  },
+  {
+    "title": "Sexual (minors) - Standard Refusal Evaluation",
+    "dataset": "sexual/minors",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 0.98
+      },
+      "OpenAI o3-mini": {
+        "value": 1
+      },
+      "GPT-4o-mini": {
+        "value": 0.98
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.98
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.94
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.95
+      },
+      "GPT-4-turbo": {
+        "value": 0.94
+      }
+    }
+  },
+  {
+    "title": "Sexual - Standard Refusal Evaluation",
+    "dataset": "sexual/exploitative",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.99
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 1
+      },
+      "GPT-4.5": {
+        "value": 0.96
+      },
+      "OpenAI o3-mini": {
+        "value": 0.99
+      },
+      "GPT-4o-mini": {
+        "value": 0.93
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.96
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.89
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.97
+      },
+      "GPT-4-turbo": {
+        "value": 0.94
+      }
+    }
+  },
+  {
+    "title": "Tutor jailbreak - system message",
+    "dataset": "system message",
+    "description": "The model is instructed to be a math tutor and not give away the solution, and the user attempts to trick the model into giving away the solution. To pass this eval, the model must not give away the answer to a math problem when the user attempts to trick the tutor.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.37
+      },
+      "GPT-4.1-mini": {
+        "value": 0.54
+      },
+      "OpenAI o4-mini": {
+        "value": 0.82
+      },
+      "OpenAI o3": {
+        "value": 0.89
+      },
+      "GPT-4.5": {
+        "value": 0.77
+      },
+      "OpenAI o3-mini": {
+        "value": 0.86
+      },
+      "GPT-4o-mini": {
+        "value": 0.31
+      },
+      "OpenAI o1": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.69
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.74
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.25
+      },
+      "GPT-4-turbo": {
+        "value": 0.67
+      }
+    }
+  },
+  {
+    "title": "Tutor jailbreak - developer message",
+    "dataset": "developer message",
+    "description": "The model is instructed to be a math tutor and not give away the solution, and the user attempts to trick the model into giving away the solution. To pass this eval, the model must not give away the answer to a math problem when the user attempts to trick the tutor.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.76
+      },
+      "GPT-4.1-mini": {
+        "value": 0.31
+      },
+      "OpenAI o4-mini": {
+        "value": 0.87
+      },
+      "OpenAI o3": {
+        "value": 0.98
+      },
+      "GPT-4.5": {
+        "value": 0.91
+      },
+      "OpenAI o3-mini": {
+        "value": 0.94
+      },
+      "GPT-4o-mini": {
+        "value": 0.99
+      },
+      "OpenAI o1": {
+        "value": 1
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.65
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.76
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.99
+      },
+      "GPT-4-turbo": {
+        "value": 0.65
+      }
+    }
+  },
+  {
+    "title": "Illicit (nonviolent) - Detailed StrongReject",
+    "dataset": "illicit/nonviolent",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.985
+      },
+      "gpt-oss-120b": {
+        "value": 0.979
+      },
+      "gpt-oss-20b": {
+        "value": 0.96
+      },
+      "gpt-5-thinking": {
+        "value": 0.995
+      },
+      "gpt-5-main": {
+        "value": 0.934
+      },
+      "gpt-5-main-mini": {
+        "value": 0.94
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.994
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.997
+      }
+    }
+  },
+  {
+    "title": "Illicit (violent) - Detailed StrongReject",
+    "dataset": "illicit/violent",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.992
+      },
+      "gpt-oss-120b": {
+        "value": 0.983
+      },
+      "gpt-oss-20b": {
+        "value": 0.979
+      },
+      "gpt-5-thinking": {
+        "value": 0.999
+      },
+      "gpt-5-main": {
+        "value": 0.948
+      },
+      "gpt-5-main-mini": {
+        "value": 0.949
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.996
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.996
+      }
+    }
+  },
+  {
+    "title": "Abuse/disinformation/hate - Detailed StrongReject",
+    "dataset": "abuse/disinformation/hate",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.995
+      },
+      "gpt-oss-120b": {
+        "value": 0.993
+      },
+      "gpt-oss-20b": {
+        "value": 0.982
+      },
+      "gpt-5-thinking": {
+        "value": 0.999
+      },
+      "gpt-5-main": {
+        "value": 0.978
+      },
+      "gpt-5-main-mini": {
+        "value": 0.971
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.973
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.997
+      }
+    }
+  },
+  {
+    "title": "Sexual - Detailed StrongReject",
+    "dataset": "sexual",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.991
+      },
+      "gpt-oss-120b": {
+        "value": 0.989
+      },
+      "gpt-oss-20b": {
+        "value": 0.97
+      },
+      "gpt-5-thinking": {
+        "value": 0.995
+      },
+      "gpt-5-main": {
+        "value": 0.967
+      },
+      "gpt-5-main-mini": {
+        "value": 0.953
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.994
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.996
+      }
+    }
+  },
+  {
+    "title": "Challenging Refusal Evaluation",
+    "dataset": "not_unsafe",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.86
+      },
+      "GPT-4.1-mini": {
+        "value": 0.71
+      },
+      "OpenAI o4-mini": {
+        "value": 0.91
+      },
+      "OpenAI o3": {
+        "value": 0.92
+      },
+      "GPT-4.5": {
+        "value": 0.85
+      },
+      "OpenAI o3-mini": {
+        "value": 0.91
+      },
+      "GPT-4o-mini": {
+        "value": 0.87
+      },
+      "OpenAI o1": {
+        "value": 0.92
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.84
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.93
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.71
+      },
+      "GPT-4-turbo": {
+        "value": 0.85
+      }
+    }
+  },
+  {
+    "title": "Non-violent (hate) - Detailed production evaluation",
+    "dataset": "non-violent hate",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.842
+      },
+      "gpt-oss-120b": {
+        "value": 0.895
+      },
+      "gpt-oss-20b": {
+        "value": 0.901
+      },
+      "gpt-5-thinking": {
+        "value": 0.883
+      },
+      "gpt-5-main": {
+        "value": 0.851
+      },
+      "gpt-5-main-mini": {
+        "value": 0.821
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.874
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.926
+      }
+    }
+  },
+  {
+    "title": "Personal data - Detailed Production Evaluation",
+    "dataset": "personal-data",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.83
+      },
+      "gpt-oss-120b": {
+        "value": 0.888
+      },
+      "gpt-oss-20b": {
+        "value": 0.921
+      },
+      "gpt-5-thinking": {
+        "value": 0.877
+      },
+      "gpt-5-main": {
+        "value": 0.98
+      },
+      "gpt-5-main-mini": {
+        "value": 0.943
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.843
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.909
+      }
+    }
+  },
+  {
+    "title": "Harassment (threatening) - Detailed Production Evaluation",
+    "dataset": "harassment/threatening",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.666
+      },
+      "gpt-oss-120b": {
+        "value": 0.832
+      },
+      "gpt-oss-20b": {
+        "value": 0.819
+      },
+      "gpt-5-thinking": {
+        "value": 0.755
+      },
+      "gpt-5-main": {
+        "value": 0.689
+      },
+      "gpt-5-main-mini": {
+        "value": 0.708
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.752
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.771
+      }
+    }
+  },
+  {
+    "title": "Sexual (exploitative) - Detailed Production Evaluation",
+    "dataset": "sexual/exploitative",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.939
+      },
+      "gpt-oss-120b": {
+        "value": 0.919
+      },
+      "gpt-oss-20b": {
+        "value": 0.852
+      },
+      "gpt-5-thinking": {
+        "value": 0.931
+      },
+      "gpt-5-main": {
+        "value": 0.826
+      },
+      "gpt-5-main-mini": {
+        "value": 0.886
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.94
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.935
+      }
+    }
+  },
+  {
+    "title": "Sexual (minors) - Detailed Production Evaluation",
+    "dataset": "sexual/minors",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.957
+      },
+      "gpt-oss-120b": {
+        "value": 0.967
+      },
+      "gpt-oss-20b": {
+        "value": 0.866
+      },
+      "gpt-5-thinking": {
+        "value": 0.958
+      },
+      "gpt-5-main": {
+        "value": 0.91
+      },
+      "gpt-5-main-mini": {
+        "value": 0.929
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.981
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.972
+      }
+    }
+  },
+  {
+    "title": "Extremism - Detailed Production Evaluation",
+    "dataset": "extremism",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.92
+      },
+      "gpt-oss-120b": {
+        "value": 0.932
+      },
+      "gpt-oss-20b": {
+        "value": 0.951
+      },
+      "gpt-5-thinking": {
+        "value": 0.954
+      },
+      "gpt-5-main": {
+        "value": 0.91
+      },
+      "gpt-5-main-mini": {
+        "value": 0.909
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.944
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.955
+      }
+    }
+  },
+  {
+    "title": "Hate (threatening) - Detailed Production Evaluation",
+    "dataset": "hate/threatening",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.677
+      },
+      "gpt-oss-120b": {
+        "value": 0.898
+      },
+      "gpt-oss-20b": {
+        "value": 0.829
+      },
+      "gpt-5-thinking": {
+        "value": 0.822
+      },
+      "gpt-5-main": {
+        "value": 0.727
+      },
+      "gpt-5-main-mini": {
+        "value": 0.778
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.829
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.797
+      }
+    }
+  },
+  {
+    "title": "Illicit (nonviolent) - Detailed Production Evaluation",
+    "dataset": "illicit/nonviolent",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.717
+      },
+      "gpt-oss-120b": {
+        "value": 0.692
+      },
+      "gpt-oss-20b": {
+        "value": 0.656
+      },
+      "gpt-5-thinking": {
+        "value": 0.79
+      },
+      "gpt-5-main": {
+        "value": 0.701
+      },
+      "gpt-5-main-mini": {
+        "value": 0.756
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.814
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.879
+      }
+    }
+  },
+  {
+    "title": "Illicit (violent) - Detailed Production Evaluation",
+    "dataset": "illicit/violent",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.829
+      },
+      "gpt-oss-120b": {
+        "value": 0.817
+      },
+      "gpt-oss-20b": {
+        "value": 0.744
+      },
+      "gpt-5-thinking": {
+        "value": 0.912
+      },
+      "gpt-5-main": {
+        "value": 0.786
+      },
+      "gpt-5-main-mini": {
+        "value": 0.809
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.944
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.947
+      }
+    }
+  },
+  {
+    "title": "Self-harm (intent) - Detailed Production Evaluation",
+    "dataset": "self-harm/intent",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.824
+      },
+      "gpt-oss-120b": {
+        "value": 0.95
+      },
+      "gpt-oss-20b": {
+        "value": 0.893
+      },
+      "gpt-5-thinking": {
+        "value": 0.95
+      },
+      "gpt-5-main": {
+        "value": 0.849
+      },
+      "gpt-5-main-mini": {
+        "value": 0.864
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.95
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.933
+      }
+    }
+  },
+  {
+    "title": "Self-harm (instructions) - Detailed Production Evaluation",
+    "dataset": "self-harm/instructions",
+    "description": "",
+    "modelScores": {
+      "OpenAI o3": {
+        "value": 0.864
+      },
+      "gpt-oss-120b": {
+        "value": 0.91
+      },
+      "gpt-oss-20b": {
+        "value": 0.899
+      },
+      "gpt-5-thinking": {
+        "value": 0.955
+      },
+      "gpt-5-main": {
+        "value": 0.759
+      },
+      "gpt-5-main-mini": {
+        "value": 0.773
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.939
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.954
+      }
+    }
+  },
+  {
+    "title": "PersonQA Accuracy",
+    "dataset": "accuracy",
+    "description": "An evaluation that aims to elicit hallucinations. PersonQA is a dataset of questions and publicly available facts about people that measures the model’s accuracy on attempted answers.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.63
+      },
+      "GPT-4.1-mini": {
+        "value": 0.45
+      },
+      "OpenAI o4-mini": {
+        "value": 0.38
+      },
+      "OpenAI o3": {
+        "value": 0.58
+      },
+      "GPT-4.5": {
+        "value": 0.7
+      },
+      "OpenAI o3-mini": {
+        "value": 0.17
+      },
+      "GPT-4o-mini": {
+        "value": 0.24
+      },
+      "OpenAI o1": {
+        "value": 0.46
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.47
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.45
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.45
+      },
+      "GPT-4-turbo": {
+        "value": 0.36
+      },
+      "gpt-oss-120b": {
+        "value": 0.298
+      },
+      "gpt-oss-20b": {
+        "value": 0.155
+      }
+    }
+  },
+  {
+    "title": "PersonQA Hallucination",
+    "dataset": "hallucination rate",
+    "description": "An evaluation that aims to elicit hallucinations. PersonQA is a dataset of questions and publicly available facts about people that measures the model’s accuracy on attempted answers.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.32
+      },
+      "GPT-4.1-mini": {
+        "value": 0.44
+      },
+      "OpenAI o4-mini": {
+        "value": 0.43
+      },
+      "OpenAI o3": {
+        "value": 0.33
+      },
+      "GPT-4.5": {
+        "value": 0.25
+      },
+      "OpenAI o3-mini": {
+        "value": 0.13
+      },
+      "GPT-4o-mini": {
+        "value": 0.52
+      },
+      "OpenAI o1": {
+        "value": 0.17
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.31
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.25
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.31
+      },
+      "GPT-4-turbo": {
+        "value": 0.21
+      },
+      "gpt-oss-120b": {
+        "value": 0.491
+      },
+      "gpt-oss-20b": {
+        "value": 0.532
+      }
+    }
+  },
+  {
+    "title": "SimpleQA Accuracy",
+    "dataset": "accuracy",
+    "description": "A diverse dataset of four thousand fact-seeking questions with short answers and measures model accuracy for attempted answers.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.4
+      },
+      "GPT-4.1-mini": {
+        "value": 0.14
+      },
+      "OpenAI o4-mini": {
+        "value": 0.21
+      },
+      "OpenAI o3": {
+        "value": 0.49
+      },
+      "GPT-4.5": {
+        "value": 0.59
+      },
+      "OpenAI o3-mini": {
+        "value": 0.14
+      },
+      "GPT-4o-mini": {
+        "value": 0.09
+      },
+      "OpenAI o1": {
+        "value": 0.45
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.36
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.36
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.37
+      },
+      "GPT-4-turbo": {
+        "value": 0.24
+      },
+      "gpt-oss-120b": {
+        "value": 0.17
+      },
+      "gpt-oss-20b": {
+        "value": 0.17
+      },
+      "gpt-5-thinking": {
+        "value": 0.55
+      },
+      "gpt-5-main": {
+        "value": 0.46
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.22
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.11
+      }
+    }
+  },
+  {
+    "title": "SimpleQA Hallucination",
+    "dataset": "hallucination rate",
+    "description": "A diverse dataset of four thousand fact-seeking questions with short answers and measures model accuracy for attempted answers.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.59
+      },
+      "GPT-4.1-mini": {
+        "value": 0.86
+      },
+      "OpenAI o4-mini": {
+        "value": 0.78
+      },
+      "OpenAI o3": {
+        "value": 0.51
+      },
+      "GPT-4.5": {
+        "value": 0.41
+      },
+      "OpenAI o3-mini": {
+        "value": 0.56
+      },
+      "GPT-4o-mini": {
+        "value": 0.9
+      },
+      "OpenAI o1": {
+        "value": 0.41
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.62
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.61
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.62
+      },
+      "GPT-4-turbo": {
+        "value": 0.69
+      },
+      "gpt-oss-120b": {
+        "value": 0.78
+      },
+      "gpt-oss-20b": {
+        "value": 0.91
+      },
+      "gpt-5-thinking": {
+        "value": 0.4
+      },
+      "gpt-5-main": {
+        "value": 0.47
+      },
+      "gpt-5-thinking-mini": {
+        "value": 0.26
+      },
+      "gpt-5-thinking-nano": {
+        "value": 0.31
+      }
+    }
+  },
+  {
+    "title": "System <> User message conflict",
+    "dataset": "System <> User",
+    "description": "To pass this eval, the model must choose to follow the instructions in the highest priority message.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.71
+      },
+      "GPT-4.1-mini": {
+        "value": 0.51
+      },
+      "OpenAI o4-mini": {
+        "value": 0.74
+      },
+      "OpenAI o3": {
+        "value": 0.82
+      },
+      "GPT-4.5": {
+        "value": 0.76
+      },
+      "OpenAI o3-mini": {
+        "value": 0.71
+      },
+      "GPT-4o-mini": {
+        "value": 0.5
+      },
+      "OpenAI o1": {
+        "value": 0.85
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.79
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.7
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.6
+      },
+      "GPT-4-turbo": {
+        "value": 0.62
+      }
+    }
+  },
+  {
+    "title": "Developer <> User message conflict",
+    "dataset": "Developer <> User",
+    "description": "To pass this eval, the model must choose to follow the instructions in the highest priority message.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.7
+      },
+      "GPT-4.1-mini": {
+        "value": 0.56
+      },
+      "OpenAI o4-mini": {
+        "value": 0.71
+      },
+      "OpenAI o3": {
+        "value": 0.76
+      },
+      "GPT-4.5": {
+        "value": 0.71
+      },
+      "OpenAI o3-mini": {
+        "value": 0.7
+      },
+      "GPT-4o-mini": {
+        "value": 0.21
+      },
+      "OpenAI o1": {
+        "value": 0.77
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.69
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.64
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.15
+      },
+      "GPT-4-turbo": {
+        "value": 0.55
+      }
+    }
+  },
+  {
+    "title": "System <> Developer message conflict",
+    "dataset": "System <> Developer",
+    "description": "To pass this eval, the model must choose to follow the instructions in the highest priority message.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.71
+      },
+      "GPT-4.1-mini": {
+        "value": 0.55
+      },
+      "OpenAI o4-mini": {
+        "value": 0.81
+      },
+      "OpenAI o3": {
+        "value": 0.85
+      },
+      "GPT-4.5": {
+        "value": 0.71
+      },
+      "OpenAI o3-mini": {
+        "value": 0.73
+      },
+      "GPT-4o-mini": {
+        "value": 0.94
+      },
+      "OpenAI o1": {
+        "value": 0.81
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.84
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.69
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.93
+      },
+      "GPT-4-turbo": {
+        "value": 0.59
+      }
+    }
+  },
+  {
+    "title": "StrongReject",
+    "dataset": "goodness@0.1",
+    "description": "An academic jailbreak benchmark that tests a model’s resistance against common attacks from the literature. We calculate goodness@0.1, which is the safety of the model when evaluated against the top 10% of jailbreak techniques per prompt.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.23
+      },
+      "GPT-4.1-mini": {
+        "value": 0.25
+      },
+      "OpenAI o4-mini": {
+        "value": 0.81
+      },
+      "OpenAI o3": {
+        "value": 0.85
+      },
+      "GPT-4.5": {
+        "value": 0.34
+      },
+      "OpenAI o3-mini": {
+        "value": 0.72
+      },
+      "GPT-4o-mini": {
+        "value": 0.54
+      },
+      "OpenAI o1": {
+        "value": 0.83
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.35
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.27
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.16
+      },
+      "GPT-4-turbo": {
+        "value": 0.24
+      }
+    }
+  },
+  {
+    "title": "Illicit (non-violent) - Challenging Refusal Evaluation",
+    "dataset": "illicit/non-violent",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.79
+      },
+      "GPT-4.1-mini": {
+        "value": 0.73
+      },
+      "OpenAI o4-mini": {
+        "value": 0.87
+      },
+      "OpenAI o3": {
+        "value": 0.92
+      },
+      "GPT-4.5": {
+        "value": 0.73
+      },
+      "OpenAI o3-mini": {
+        "value": 0.94
+      },
+      "GPT-4o-mini": {
+        "value": 0.76
+      },
+      "OpenAI o1": {
+        "value": 0.92
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.74
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.86
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.69
+      },
+      "GPT-4-turbo": {
+        "value": 0.91
+      }
+    }
+  },
+  {
+    "title": "Illicit (violent) - Challenging Refusal Evaluation",
+    "dataset": "illicit/violent",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.93
+      },
+      "GPT-4.1-mini": {
+        "value": 0.78
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 0.96
+      },
+      "GPT-4.5": {
+        "value": 0.78
+      },
+      "OpenAI o3-mini": {
+        "value": 0.96
+      },
+      "GPT-4o-mini": {
+        "value": 0.74
+      },
+      "OpenAI o1": {
+        "value": 0.96
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.78
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.89
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.7
+      },
+      "GPT-4-turbo": {
+        "value": 0.81
+      }
+    }
+  },
+  {
+    "title": "Harassment (threatening) - Challenging Refusal Evaluation",
+    "dataset": "harassment/threatening",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.9
+      },
+      "GPT-4.1-mini": {
+        "value": 0.87
+      },
+      "OpenAI o4-mini": {
+        "value": 0.88
+      },
+      "OpenAI o3": {
+        "value": 0.9
+      },
+      "GPT-4.5": {
+        "value": 0.89
+      },
+      "OpenAI o3-mini": {
+        "value": 0.87
+      },
+      "GPT-4o-mini": {
+        "value": 0.91
+      },
+      "OpenAI o1": {
+        "value": 0.9
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.9
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.94
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.84
+      },
+      "GPT-4-turbo": {
+        "value": 0.92
+      }
+    }
+  },
+  {
+    "title": "Hate (threatening) - Challenging Refusal Evaluation",
+    "dataset": "hate/threatening",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 1
+      },
+      "GPT-4.1-mini": {
+        "value": 0.82
+      },
+      "OpenAI o4-mini": {
+        "value": 0.91
+      },
+      "OpenAI o3": {
+        "value": 0.91
+      },
+      "GPT-4.5": {
+        "value": 0.82
+      },
+      "OpenAI o3-mini": {
+        "value": 0.91
+      },
+      "GPT-4o-mini": {
+        "value": 0.73
+      },
+      "OpenAI o1": {
+        "value": 0.91
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.82
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.91
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.82
+      },
+      "GPT-4-turbo": {
+        "value": 0.82
+      }
+    }
+  },
+  {
+    "title": "Self-harm (instructions) - Challenging Refusal Evaluation",
+    "dataset": "self-harm/instructions",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.85
+      },
+      "GPT-4.1-mini": {
+        "value": 1
+      },
+      "OpenAI o4-mini": {
+        "value": 0.92
+      },
+      "OpenAI o3": {
+        "value": 0.85
+      },
+      "GPT-4.5": {
+        "value": 0.85
+      },
+      "OpenAI o3-mini": {
+        "value": 0.92
+      },
+      "GPT-4o-mini": {
+        "value": 0.85
+      },
+      "OpenAI o1": {
+        "value": 0.85
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.92
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 1
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 1
+      },
+      "GPT-4-turbo": {
+        "value": 1
+      }
+    }
+  },
+  {
+    "title": "Sexual (minors) - Challenging Refusal Evaluation",
+    "dataset": "sexual/minors",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.83
+      },
+      "GPT-4.1-mini": {
+        "value": 0.81
+      },
+      "OpenAI o4-mini": {
+        "value": 0.91
+      },
+      "OpenAI o3": {
+        "value": 0.89
+      },
+      "GPT-4.5": {
+        "value": 0.9
+      },
+      "OpenAI o3-mini": {
+        "value": 0.95
+      },
+      "GPT-4o-mini": {
+        "value": 0.91
+      },
+      "OpenAI o1": {
+        "value": 0.9
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.93
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.97
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.66
+      },
+      "GPT-4-turbo": {
+        "value": 0.83
+      }
+    }
+  },
+  {
+    "title": "Sexual (exploitative) - Challenging Refusal Evaluation",
+    "dataset": "sexual/exploitative",
+    "description": "",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.85
+      },
+      "GPT-4.1-mini": {
+        "value": 0.78
+      },
+      "OpenAI o4-mini": {
+        "value": 0.97
+      },
+      "OpenAI o3": {
+        "value": 0.94
+      },
+      "GPT-4.5": {
+        "value": 0.88
+      },
+      "OpenAI o3-mini": {
+        "value": 0.94
+      },
+      "GPT-4o-mini": {
+        "value": 0.89
+      },
+      "OpenAI o1": {
+        "value": 0.95
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.77
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.94
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.5
+      },
+      "GPT-4-turbo": {
+        "value": 0.7
+      }
+    }
+  },
+  {
+    "title": "Human-sourced jailbreaks",
+    "dataset": "not_unsafe",
+    "description": "Prompts collected from human red teaming.",
+    "modelScores": {
+      "GPT-4.1": {
+        "value": 0.96
+      },
+      "GPT-4.1-mini": {
+        "value": 0.93
+      },
+      "OpenAI o4-mini": {
+        "value": 1
+      },
+      "OpenAI o3": {
+        "value": 0.98
+      },
+      "GPT-4.5": {
+        "value": 0.99
+      },
+      "OpenAI o3-mini": {
+        "value": 0.94
+      },
+      "GPT-4o-mini": {
+        "value": 0.9
+      },
+      "OpenAI o1": {
+        "value": 0.97
+      },
+      "GPT-4o-2024-11-20": {
+        "value": 0.99
+      },
+      "GPT-4o-2024-08-16": {
+        "value": 0.92
+      },
+      "GPT-4o-2024-05-13": {
+        "value": 0.91
+      },
+      "GPT-4-turbo": {
+        "value": 0.95
+      }
+    }
+  }
+]
