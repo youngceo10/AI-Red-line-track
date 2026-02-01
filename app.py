@@ -388,13 +388,29 @@ data_stats = {
     "Duplicates Removed": st.session_state.get('duplicates_removed', 0)
 }
 
+
 col_stat1, col_stat2, col_stat3 = st.columns(3)
 with col_stat1:
-    st.metric("Total Assessments", data_stats["Total Assessments"])
+    st.markdown(f"""
+    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 16px; text-align: center; margin: 8px 0;">
+        <div style="color: #6B7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Total Assessments</div>
+        <div style="color: #171717; font-size: 28px; font-weight: 700; margin-top: 8px;">{data_stats["Total Assessments"]}</div>
+    </div>
+    """, unsafe_allow_html=True)
 with col_stat2:
-    st.metric("Labs", data_stats["Labs Covered"])
+    st.markdown(f"""
+    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 16px; text-align: center; margin: 8px 0;">
+        <div style="color: #6B7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Labs</div>
+        <div style="color: #171717; font-size: 28px; font-weight: 700; margin-top: 8px;">{data_stats["Labs Covered"]}</div>
+    </div>
+    """, unsafe_allow_html=True)
 with col_stat3:
-    st.metric("Models", data_stats["Models Tracked"])
+    st.markdown(f"""
+    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 16px; text-align: center; margin: 8px 0;">
+        <div style="color: #6B7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Models</div>
+        <div style="color: #171717; font-size: 28px; font-weight: 700; margin-top: 8px;">{data_stats["Models Tracked"]}</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 st.divider()
 
