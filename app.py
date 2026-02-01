@@ -34,6 +34,27 @@ st.markdown("""
         border-radius: 8px;
         background-color: white;
     }
+    /* Button Styling - High Contrast */
+    .stButton > button {
+        background-color: #171717 !important;
+        color: #FFFFFF !important;
+        border: 2px solid #171717 !important;
+        font-weight: 600;
+        padding: 10px 20px !important;
+        border-radius: 6px;
+    }
+    .stButton > button:hover {
+        background-color: #374151 !important;
+        border-color: #374151 !important;
+    }
+    /* Primary Button Styling */
+    button[kind="primary"] {
+        background-color: #DC2626 !important;
+        color: #FFFFFF !important;
+    }
+    button[kind="primary"]:hover {
+        background-color: #991B1B !important;
+    }
     .alert-high {
         background-color: #fee2e2;
         border-left: 4px solid #dc2626;
@@ -101,6 +122,23 @@ st.markdown("""
         text-transform: uppercase;
         letter-spacing: 0.5px;
         font-weight: 600;
+    }
+    /* Input and text elements */
+    input {
+        color: #171717 !important;
+        background-color: #FFFFFF !important;
+    }
+    select {
+        color: #171717 !important;
+        background-color: #FFFFFF !important;
+    }
+    /* Dataframe styling */
+    .stDataFrame {
+        background-color: #FFFFFF;
+    }
+    /* Divider */
+    hr {
+        border-color: #D1D5DB;
     }
     </style>
     """, unsafe_allow_html=True)
