@@ -452,9 +452,10 @@ fig.update_layout(
     legend=dict(
         x=1.02,
         y=1,
-        bgcolor='rgba(255, 255, 255, 0.8)',
-        bordercolor='#e5e5e5',
-        borderwidth=1
+        bgcolor='rgba(255, 255, 255, 0.95)',
+        bordercolor='#171717',
+        borderwidth=2,
+        font=dict(color="#171717", size=12)
     ),
     margin=dict(l=60, r=150, t=50, b=100)
 )
@@ -574,9 +575,15 @@ if selected_view == "Risk Gap Analysis":
         height=500,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family="Inter", color="#171717"),
+        font=dict(family="Inter", color="#171717", size=11),
         xaxis_title="Points to Critical (80)",
-        yaxis_title=""
+        yaxis_title="",
+        legend=dict(
+            bgcolor='rgba(255, 255, 255, 0.95)',
+            bordercolor='#171717',
+            borderwidth=2,
+            font=dict(color="#171717", size=11)
+        )
     )
     st.plotly_chart(fig_gap, use_container_width=True)
 
@@ -601,10 +608,16 @@ elif selected_view == "Lab Comparison":
         height=500,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family="Inter", color="#171717"),
+        font=dict(family="Inter", color="#171717", size=11),
         yaxis_title="Average Risk Score",
         xaxis_title="Laboratory",
-        hovermode='x unified'
+        hovermode='x unified',
+        legend=dict(
+            bgcolor='rgba(255, 255, 255, 0.95)',
+            bordercolor='#171717',
+            borderwidth=2,
+            font=dict(color="#171717", size=11)
+        )
     )
     st.plotly_chart(fig_compare, use_container_width=True)
 
@@ -635,7 +648,14 @@ elif selected_view == "Category Heatmap":
         height=600,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family="Inter", color="#171717")
+        font=dict(family="Inter", color="#171717", size=11),
+        coloraxis=dict(
+            colorbar=dict(
+                thickness=15,
+                len=0.7,
+                tickfont=dict(color="#171717", size=11)
+            )
+        )
     )
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
@@ -661,10 +681,16 @@ elif selected_view == "Trend Over Models":
         height=500,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family="Inter", color="#171717"),
+        font=dict(family="Inter", color="#171717", size=11),
         xaxis_title="Model (sorted)",
         yaxis_title="Risk Score",
-        hovermode='x unified'
+        hovermode='x unified',
+        legend=dict(
+            bgcolor='rgba(255, 255, 255, 0.95)',
+            bordercolor='#171717',
+            borderwidth=2,
+            font=dict(color="#171717", size=11)
+        )
     )
     st.plotly_chart(fig_trend, use_container_width=True)
 
@@ -687,10 +713,16 @@ else:  # Score Distribution
         height=500,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family="Inter", color="#171717"),
+        font=dict(family="Inter", color="#171717", size=11),
         xaxis_title="Risk Score",
         yaxis_title="Number of Assessments",
-        hovermode='x'
+        hovermode='x',
+        legend=dict(
+            bgcolor='rgba(255, 255, 255, 0.95)',
+            bordercolor='#171717',
+            borderwidth=2,
+            font=dict(color="#171717", size=11)
+        )
     )
     st.plotly_chart(fig_dist, use_container_width=True)
 
@@ -706,7 +738,12 @@ consistency_cols = st.columns(3)
 for idx, (lab, frameworks) in enumerate(framework_check.items()):
     with consistency_cols[idx]:
         framework_list = ", ".join(frameworks)
-        st.caption(f"**{lab}**: {framework_list}")
+        st.markdown(f"""
+        <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 12px; margin: 8px 0;">
+            <strong style="color: #171717; font-size: 14px;">{lab}</strong><br>
+            <span style="color: #171717; font-size: 12px; font-weight: 600;">{framework_list}</span>
+        </div>
+        """, unsafe_allow_html=True)
 
 display_df = df[['Lab', 'Model', 'Risk_Category', 'Score', 'Threshold', 'Status', 'Citation']].copy()
 display_df['Gap'] = display_df['Threshold'] - display_df['Score']
