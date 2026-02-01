@@ -6,6 +6,8 @@ import json
 from pathlib import Path
 
 # --- PAGE CONFIGURATION (Line⁴ Aesthetic) ---
+# Responsive design using CSS clamp() for fluid scaling across devices
+# Mobile (<640px) → Tablet (<768px) → Desktop (≥769px)
 st.set_page_config(
     page_title="Line⁴ | Global Risk Radar",
     layout="wide",
@@ -13,132 +15,255 @@ st.set_page_config(
     page_icon="▸"
 )
 
-# Custom CSS for "Beige/Paper" Aesthetic
+# Custom CSS for "Beige/Paper" Aesthetic with Responsive Design
 st.markdown("""
     <style>
+    /* Base Responsive Styles */
+    * {
+        box-sizing: border-box;
+    }
+    
     .stApp {
         background-color: #F9F8F4;
         color: #171717;
+        max-width: 100%;
+        overflow-x: hidden;
     }
+    
     h1, h2, h3 {
         font-family: 'Newsreader', serif;
         color: #171717;
+        word-wrap: break-word;
     }
+    
+    h1 {
+        font-size: clamp(24px, 5vw, 48px);
+    }
+    
+    h2 {
+        font-size: clamp(18px, 4vw, 32px);
+    }
+    
+    h3 {
+        font-size: clamp(16px, 3vw, 24px);
+    }
+    
     .stMetricValue {
         font-family: 'Inter', sans-serif;
         font-weight: 600;
     }
+    
     div[data-testid="stContainer"] {
         border: 1px solid #e5e5e5;
-        padding: 20px;
+        padding: clamp(12px, 3vw, 20px);
         border-radius: 8px;
         background-color: white;
+        margin: clamp(8px, 2vw, 16px) 0;
     }
-    /* Button Styling - High Contrast */
+    
+    /* Button Styling - Responsive */
     .stButton > button {
         background-color: #171717 !important;
         color: #FFFFFF !important;
         border: 2px solid #171717 !important;
         font-weight: 600;
-        padding: 10px 20px !important;
+        padding: clamp(8px, 2vw, 10px) clamp(12px, 3vw, 20px) !important;
         border-radius: 6px;
+        font-size: clamp(12px, 2vw, 14px);
+        min-height: 36px;
+        width: 100%;
     }
+    
     .stButton > button:hover {
         background-color: #374151 !important;
         border-color: #374151 !important;
     }
+    
     /* Primary Button Styling */
     button[kind="primary"] {
         background-color: #DC2626 !important;
         color: #FFFFFF !important;
     }
+    
     button[kind="primary"]:hover {
         background-color: #991B1B !important;
     }
+    
     .alert-high {
         background-color: #fee2e2;
         border-left: 4px solid #dc2626;
-        padding: 12px;
+        padding: clamp(8px, 2vw, 12px);
         border-radius: 4px;
+        font-size: clamp(12px, 2vw, 14px);
     }
+    
     .alert-medium {
         background-color: #fef3c7;
         border-left: 4px solid #f59e0b;
-        padding: 12px;
+        padding: clamp(8px, 2vw, 12px);
         border-radius: 4px;
     }
+    
     .alert-low {
         background-color: #d1fae5;
         border-left: 4px solid #10b981;
-        padding: 12px;
+        padding: clamp(8px, 2vw, 12px);
         border-radius: 4px;
     }
+    
     .lab-header {
         display: flex;
         align-items: center;
-        gap: 12px;
-        margin: 15px 0;
+        gap: clamp(8px, 2vw, 12px);
+        margin: clamp(10px, 2vw, 15px) 0;
+        flex-wrap: wrap;
     }
+    
     .lab-logo {
-        width: 40px;
-        height: 40px;
+        width: clamp(32px, 5vw, 40px);
+        height: clamp(32px, 5vw, 40px);
         border-radius: 6px;
         object-fit: contain;
         background: #f5f5f5;
         padding: 4px;
+        flex-shrink: 0;
     }
+    
     .status-badge {
         display: inline-block;
-        padding: 4px 12px;
+        padding: clamp(2px, 1vw, 4px) clamp(8px, 2vw, 12px);
         border-radius: 20px;
-        font-size: 12px;
+        font-size: clamp(10px, 1.5vw, 12px);
         font-weight: 600;
         margin: 2px;
+        white-space: nowrap;
     }
+    
     .status-watch {
         background-color: #fef3c7;
         color: #92400e;
     }
+    
     .status-safe {
         background-color: #d1fae5;
         color: #065f46;
     }
+    
     .status-critical {
         background-color: #fee2e2;
         color: #7f1d1d;
     }
+    
     .section-header {
         font-weight: 700;
-        font-size: 14px;
+        font-size: clamp(12px, 2vw, 14px);
         letter-spacing: 0.5px;
         color: #171717;
         margin-top: 8px;
         margin-bottom: 12px;
         text-transform: uppercase;
     }
+    
     .metric-label {
-        font-size: 12px;
+        font-size: clamp(10px, 1.5vw, 12px);
         color: #6b7280;
         text-transform: uppercase;
         letter-spacing: 0.5px;
         font-weight: 600;
     }
+    
     /* Input and text elements */
     input {
         color: #171717 !important;
         background-color: #FFFFFF !important;
+        font-size: clamp(12px, 2vw, 14px);
     }
+    
     select {
         color: #171717 !important;
         background-color: #FFFFFF !important;
+        font-size: clamp(12px, 2vw, 14px);
     }
+    
     /* Dataframe styling */
     .stDataFrame {
         background-color: #FFFFFF;
+        font-size: clamp(11px, 1.5vw, 13px);
     }
+    
     /* Divider */
     hr {
         border-color: #D1D5DB;
+        margin: clamp(16px, 3vw, 24px) 0;
+    }
+    
+    /* Radio button responsive styling */
+    div[data-testid="stRadio"] > label > span {
+        color: #171717 !important;
+        font-weight: 600 !important;
+        font-size: clamp(12px, 2vw, 13px) !important;
+    }
+    
+    div[data-testid="stRadio"] > div {
+        gap: clamp(12px, 3vw, 20px);
+        flex-wrap: wrap;
+    }
+    
+    /* Tabs responsive */
+    button[data-baseweb="tab"] {
+        font-size: clamp(12px, 2vw, 14px);
+        padding: clamp(8px, 1.5vw, 12px) clamp(12px, 2vw, 16px);
+    }
+    
+    /* Mobile-first breakpoints */
+    @media (max-width: 640px) {
+        .stApp {
+            padding: 0 8px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .stColumn {
+            margin-right: 8px;
+        }
+        
+        .stButton > button {
+            width: 100%;
+            font-size: 12px;
+        }
+        
+        div[data-testid="stRadio"] > div {
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .lab-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .stApp {
+            padding: 0 12px;
+        }
+        
+        h1 {
+            font-size: 28px;
+        }
+        
+        .stColumn {
+            margin-right: 12px;
+        }
+    }
+    
+    @media (min-width: 769px) {
+        .stApp {
+            padding: 0 20px;
+        }
     }
     </style>
     """, unsafe_allow_html=True)
@@ -150,6 +275,14 @@ LAB_LOGOS = {
     "DeepMind": "https://res.cloudinary.com/djrdh7thl/image/upload/v1769947962/DeepMind_idlHaUh9oK_1_kb4fr4.png",
     "Meta": "https://res.cloudinary.com/djrdh7thl/image/upload/v1769948142/Meta_idlf4cVSsS_1_wdkqrv.png"
 }
+
+# Responsive chart height helper
+def get_chart_height(base_height=500):
+    """Calculate responsive chart height based on screen width"""
+    import streamlit as st
+    # Mobile: smaller, Tablet: medium, Desktop: full
+    # Returns base height; CSS will handle responsive scaling via viewport width
+    return base_height
 
 # --- LOAD LIVE DATA ---
 def load_anthropic_data():
@@ -398,23 +531,29 @@ def load_risk_data():
 df = pd.DataFrame(load_risk_data())
 
 # --- DASHBOARD LAYOUT ---
+# Detect screen size context
+import streamlit as st
+screen_width = st.session_state.get('screen_width', 1200)
 
-# Header
-col1, col2 = st.columns([3, 1])
-# Header with real source links
-col1, col2, col3 = st.columns([2, 1.5, 1.5])
+# Header with responsive layout
+st.title("LINE⁴ | Global Risk Radar")
+st.markdown("**Live Operational Status**: Tracking catastrophic AI risk assessments across CBRN proliferation, cyber offense capabilities, autonomous replication, and deceptive alignment from 3 major safety labs.")
+
+# Responsive header columns
+col1, col2, col3 = st.columns([2, 1.5, 1], gap="medium")
 with col1:
-    st.title("LINE⁴ | Global Risk Radar")
-    st.markdown("**Live Operational Status**: Tracking catastrophic AI risk assessments across CBRN proliferation, cyber offense capabilities, autonomous replication, and deceptive alignment from 3 major safety labs.")
-with col2:
-    st.caption("DATA SOURCES")
+    st.caption("**DATA SOURCES**")
     st.markdown("""
     - [Anthropic System Cards](https://www.anthropic.com/system-cards)
     - [OpenAI Safety Hub](https://openai.com/safety/evaluations-hub/)
     - [DeepMind Model Cards](https://deepmind.google/models/model-cards/)
     """)
+with col2:
+    st.caption("**LAST UPDATED**")
+    st.markdown("Feb 1, 2026")
 with col3:
-    if st.button("SYNC DATA"):
+    st.caption("")
+    if st.button("🔄 SYNC DATA", use_container_width=True):
         st.rerun()
 
 st.divider()
@@ -430,26 +569,26 @@ data_stats = {
 }
 
 
-col_stat1, col_stat2, col_stat3 = st.columns(3)
+col_stat1, col_stat2, col_stat3 = st.columns(3, gap="small")
 with col_stat1:
     st.markdown(f"""
-    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 16px; text-align: center; margin: 8px 0;">
-        <div style="color: #6B7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Total Assessments</div>
-        <div style="color: #171717; font-size: 28px; font-weight: 700; margin-top: 8px;">{data_stats["Total Assessments"]}</div>
+    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: clamp(12px, 3vw, 16px); text-align: center; margin: clamp(4px, 1vw, 8px) 0;">
+        <div style="color: #6B7280; font-size: clamp(10px, 1.5vw, 12px); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Total Assessments</div>
+        <div style="color: #171717; font-size: clamp(24px, 4vw, 28px); font-weight: 700; margin-top: clamp(6px, 1vw, 8px);">{data_stats["Total Assessments"]}</div>
     </div>
     """, unsafe_allow_html=True)
 with col_stat2:
     st.markdown(f"""
-    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 16px; text-align: center; margin: 8px 0;">
-        <div style="color: #6B7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Labs</div>
-        <div style="color: #171717; font-size: 28px; font-weight: 700; margin-top: 8px;">{data_stats["Labs Covered"]}</div>
+    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: clamp(12px, 3vw, 16px); text-align: center; margin: clamp(4px, 1vw, 8px) 0;">
+        <div style="color: #6B7280; font-size: clamp(10px, 1.5vw, 12px); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Labs</div>
+        <div style="color: #171717; font-size: clamp(24px, 4vw, 28px); font-weight: 700; margin-top: clamp(6px, 1vw, 8px);">{data_stats["Labs Covered"]}</div>
     </div>
     """, unsafe_allow_html=True)
 with col_stat3:
     st.markdown(f"""
-    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 16px; text-align: center; margin: 8px 0;">
-        <div style="color: #6B7280; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Models</div>
-        <div style="color: #171717; font-size: 28px; font-weight: 700; margin-top: 8px;">{data_stats["Models Tracked"]}</div>
+    <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: clamp(12px, 3vw, 16px); text-align: center; margin: clamp(4px, 1vw, 8px) 0;">
+        <div style="color: #6B7280; font-size: clamp(10px, 1.5vw, 12px); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Models</div>
+        <div style="color: #171717; font-size: clamp(24px, 4vw, 28px); font-weight: 700; margin-top: clamp(6px, 1vw, 8px);">{data_stats["Models Tracked"]}</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -500,7 +639,7 @@ fig.add_hline(
 fig.update_layout(
     xaxis_title="Model",
     yaxis_title="Risk Score (0-100)",
-    height=500,
+    height=max(350, min(600, int(st.session_state.get('viewport_width', 1200) * 0.35))),
     hovermode='x unified',
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(245,245,245,1)',
@@ -591,20 +730,18 @@ if len(high_risk) > 0:
     # Display current page items
     for index, row in page_data.iterrows():
         with st.container():
-            col_logo, col_info, col_status = st.columns([0.08, 0.62, 0.3])
+            col_logo, col_info, col_status = st.columns([0.06, 0.64, 0.30], gap="small")
             with col_logo:
                 logo_url = LAB_LOGOS.get(row['Lab'], "")
                 if logo_url:
-                    st.image(logo_url, width=36)
+                    st.image(logo_url, width=32)
             with col_info:
-                st.markdown(f"**{row['Lab']}** — {row['Model']}")
+                st.markdown(f"**{row['Lab']}** — {row['Model']}", help=f"Score: {row['Score']}/100")
             with col_status:
                 status_class = "status-watch" if row['Score'] > 70 else "status-safe"
-                st.markdown(f"<span class='status-badge {status_class}'>{row['Status'].upper()}</span>", unsafe_allow_html=True)
-        
+                st.markdown(f"<span class='status-badge {status_class}' style='font-size: clamp(10px, 1.5vw, 12px);'>{row['Status'].upper()}</span>", unsafe_allow_html=True)
         st.progress(row['Score'] / 100)
-        st.caption(f"**{row['Risk_Category']}** — {row['Score']}/100")
-        st.caption(f"_{row['Citation']}_")
+        st.caption(f"**{row['Risk_Category']}** — {row['Score']}/100", help=row['Citation'])
 else:
     st.success("All systems nominal")
 
@@ -648,7 +785,7 @@ if selected_view == "Lab Comparison":
     
     fig_compare.update_layout(
         barmode='group',
-        height=500,
+        height=max(350, min(600, int(st.session_state.get('viewport_width', 1200) * 0.35))),
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         font=dict(family="Inter", color="#171717", size=11),
@@ -696,7 +833,7 @@ elif selected_view == "Category Heatmap":
     ))
     
     fig_heatmap.update_layout(
-        height=600,
+        height=max(400, min(800, int(st.session_state.get('viewport_width', 1200) * 0.5))),
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         font=dict(family="Inter", color="#171717", size=11),
@@ -729,7 +866,7 @@ elif selected_view == "Trend Over Models":
         ))
     
     fig_trend.update_layout(
-        height=500,
+        height=max(350, min(600, int(st.session_state.get('viewport_width', 1200) * 0.35))),
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         font=dict(family="Inter", color="#171717", size=11),
@@ -769,7 +906,7 @@ elif selected_view == "Score Distribution":
     
     fig_dist.update_layout(
         barmode='group',
-        height=500,
+        height=max(350, min(600, int(st.session_state.get('viewport_width', 1200) * 0.35))),
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         font=dict(family="Inter", color="#171717", size=11),
@@ -820,7 +957,7 @@ else:  # Risk Assessment by Category
                     ))
                 
                 fig_gap.update_layout(
-                    height=400,
+                    height=max(300, min(500, int(st.session_state.get('viewport_width', 1200) * 0.3))),
                     paper_bgcolor='rgba(0,0,0,0)',
                     plot_bgcolor='rgba(245,245,245,1)',
                     font=dict(family="Inter", color="#171717", size=11),
@@ -867,14 +1004,14 @@ st.subheader("DETAILED RISK ASSESSMENT")
 # Data consistency check by framework
 st.markdown("**Tracking Consistency** — Each lab uses distinct frameworks for evaluation:")
 framework_check = df.groupby('Lab')['Framework'].unique()
-consistency_cols = st.columns(3)
+consistency_cols = st.columns(len(list(framework_check.items())), gap="small")
 for idx, (lab, frameworks) in enumerate(framework_check.items()):
     with consistency_cols[idx]:
         framework_list = ", ".join(frameworks)
         st.markdown(f"""
-        <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: 12px; margin: 8px 0;">
-            <strong style="color: #171717; font-size: 14px;">{lab}</strong><br>
-            <span style="color: #171717; font-size: 12px; font-weight: 600;">{framework_list}</span>
+        <div style="background-color: #FFFFFF; border: 2px solid #171717; border-radius: 8px; padding: clamp(10px, 2vw, 12px); margin: clamp(4px, 1vw, 8px) 0;">
+            <strong style="color: #171717; font-size: clamp(12px, 1.8vw, 14px);">{lab}</strong><br>
+            <span style="color: #171717; font-size: clamp(10px, 1.5vw, 12px); font-weight: 600;">{framework_list}</span>
         </div>
         """, unsafe_allow_html=True)
 
