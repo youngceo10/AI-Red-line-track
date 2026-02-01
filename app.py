@@ -605,7 +605,6 @@ if len(high_risk) > 0:
         st.progress(row['Score'] / 100)
         st.caption(f"**{row['Risk_Category']}** — {row['Score']}/100")
         st.caption(f"_{row['Citation']}_")
-        st.divider()
 else:
     st.success("All systems nominal")
 
@@ -628,76 +627,10 @@ div[data-testid="stRadio"] > div {
 </style>
 """, unsafe_allow_html=True)
 
-view_options = ["Risk Assessment by Category", "Lab Comparison", "Category Heatmap", "Trend Over Models", "Score Distribution"]
+view_options = ["Lab Comparison", "Category Heatmap", "Trend Over Models", "Score Distribution", "Risk Assessment by Category"]
 selected_view = st.radio("Select View:", view_options, horizontal=True, key="analysis_view")
 
-if selected_view == "Risk Assessment by Category":
-    # Group by risk categories - shows assessment distribution across the 4 dimensions (NEW PRIMARY VIEW)
-    st.markdown("**Risk Assessment by Category** — CBRN Proliferation | Cyber Offense | Autonomous Replication | Deceptive Alignment")
-    
-    risk_categories = ["CBRN Proliferation", "Cyber Offense", "Autonomous Replication", "Deceptive Alignment"]
-    category_tabs = st.tabs(risk_categories)
-    
-    for tab_idx, category in enumerate(risk_categories):
-        with category_tabs[tab_idx]:
-            # Filter data for this risk category
-            category_data = df[df['Risk_Category'] == category].copy()
-            
-            if len(category_data) > 0:
-                # Create bar chart grouped by lab
-                fig_gap = go.Figure()
-                
-                for lab in category_data['Lab'].unique():
-                    lab_data = category_data[category_data['Lab'] == lab].sort_values('Score', ascending=False)
-                    fig_gap.add_trace(go.Bar(
-                        y=lab_data['Model'],
-                        x=lab_data['Score'],
-                        orientation='h',
-                        name=lab,
-                        hovertemplate="<b>%{y}</b><br>%{fullData.name}<br>Score: %{x}/100<extra></extra>"
-                    ))
-                
-                fig_gap.update_layout(
-                    height=400,
-                    paper_bgcolor='rgba(0,0,0,0)',
-                    plot_bgcolor='rgba(245,245,245,1)',
-                    font=dict(family="Inter", color="#171717", size=11),
-                    xaxis_title="Risk Score (0-100)",
-                    yaxis_title="Model",
-                    xaxis=dict(
-                        range=[0, 100],
-                        title_font=dict(size=13, color="#171717", family="Inter"),
-                        tickfont=dict(size=10, color="#171717")
-                    ),
-                    yaxis=dict(
-                        tickfont=dict(size=10, color="#171717")
-                    ),
-                    barmode='group',
-                    hovermode='y unified',
-                    legend=dict(
-                        bgcolor='rgba(255, 255, 255, 0.95)',
-                        bordercolor='#171717',
-                        borderwidth=2,
-                        font=dict(color="#171717", size=11)
-                    )
-                )
-                st.plotly_chart(fig_gap, use_container_width=True)
-                
-                # Show summary stats
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    avg_score = category_data['Score'].mean()
-                    st.metric(f"Average Score", f"{avg_score:.1f}/100")
-                with col2:
-                    max_score = category_data['Score'].max()
-                    st.metric("Highest Risk", f"{max_score}/100")
-                with col3:
-                    models_count = category_data['Model'].nunique()
-                    st.metric("Models Assessed", models_count)
-            else:
-                st.info(f"No data available for {category}")
-
-elif selected_view == "Lab Comparison":
+if selected_view == "Lab Comparison":
     # Side-by-side lab comparison
     st.markdown("**Lab Risk Profiles** — Average scores by lab and category")
     
@@ -820,7 +753,7 @@ elif selected_view == "Trend Over Models":
     )
     st.plotly_chart(fig_trend, use_container_width=True)
 
-else:  # Score Distribution
+elif selected_view == "Score Distribution":
     # Histogram of score distribution
     st.markdown("**Risk Distribution** — Frequency of scores across all assessments")
     
@@ -859,6 +792,72 @@ else:  # Score Distribution
         )
     )
     st.plotly_chart(fig_dist, use_container_width=True)
+
+else:  # Risk Assessment by Category
+    # Group by risk categories - shows assessment distribution across the 4 dimensions
+    st.markdown("**Risk Assessment by Category** — CBRN Proliferation | Cyber Offense | Autonomous Replication | Deceptive Alignment")
+    
+    risk_categories = ["CBRN Proliferation", "Cyber Offense", "Autonomous Replication", "Deceptive Alignment"]
+    category_tabs = st.tabs(risk_categories)
+    
+    for tab_idx, category in enumerate(risk_categories):
+        with category_tabs[tab_idx]:
+            # Filter data for this risk category
+            category_data = df[df['Risk_Category'] == category].copy()
+            
+            if len(category_data) > 0:
+                # Create bar chart grouped by lab
+                fig_gap = go.Figure()
+                
+                for lab in category_data['Lab'].unique():
+                    lab_data = category_data[category_data['Lab'] == lab].sort_values('Score', ascending=False)
+                    fig_gap.add_trace(go.Bar(
+                        y=lab_data['Model'],
+                        x=lab_data['Score'],
+                        orientation='h',
+                        name=lab,
+                        hovertemplate="<b>%{y}</b><br>%{fullData.name}<br>Score: %{x}/100<extra></extra>"
+                    ))
+                
+                fig_gap.update_layout(
+                    height=400,
+                    paper_bgcolor='rgba(0,0,0,0)',
+                    plot_bgcolor='rgba(245,245,245,1)',
+                    font=dict(family="Inter", color="#171717", size=11),
+                    xaxis_title="Risk Score (0-100)",
+                    yaxis_title="Model",
+                    xaxis=dict(
+                        range=[0, 100],
+                        title_font=dict(size=13, color="#171717", family="Inter"),
+                        tickfont=dict(size=10, color="#171717")
+                    ),
+                    yaxis=dict(
+                        tickfont=dict(size=10, color="#171717")
+                    ),
+                    barmode='group',
+                    hovermode='y unified',
+                    legend=dict(
+                        bgcolor='rgba(255, 255, 255, 0.95)',
+                        bordercolor='#171717',
+                        borderwidth=2,
+                        font=dict(color="#171717", size=11)
+                    )
+                )
+                st.plotly_chart(fig_gap, use_container_width=True)
+                
+                # Show summary stats
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    avg_score = category_data['Score'].mean()
+                    st.metric(f"Average Score", f"{avg_score:.1f}/100")
+                with col2:
+                    max_score = category_data['Score'].max()
+                    st.metric("Highest Risk", f"{max_score}/100")
+                with col3:
+                    models_count = category_data['Model'].nunique()
+                    st.metric("Models Assessed", models_count)
+            else:
+                st.info(f"No data available for {category}")
 
 st.divider()
 
