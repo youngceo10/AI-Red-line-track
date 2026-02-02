@@ -1,5 +1,7 @@
 # LINE⁴ | Global Risk Radar
 
+live app: https://line4.vercel.app/
+
 **AI Safety Intelligence System** — Real-time monitoring of catastrophic AI risk assessments from Anthropic, OpenAI, and DeepMind.
 
 ## Overview
@@ -70,52 +72,6 @@ LINE⁴ (Line Four) aggregates official safety evaluations across three framewor
 - **Versioned History**: Track score changes over time with delta indicators
 - **Snapshot Comparison**: "Before/After" analysis when labs update assessments
 
-### Phase 2: Advanced Analytics (Q3-Q4 2026)
-
-- **Predictive Scoring**: ML model to forecast risk trajectories based on historical patterns
-- **Correlation Analysis**: Identify which model improvements trigger risk changes
-- **Lab Benchmarking**: Compare risk assessment methodologies across labs
-- **Red Line Alerts**: Automated warnings when scores approach defined thresholds
-
-### Phase 3: Interactivity & Customization (Q4 2026-Q1 2027)
-
-- **Advanced Filtering**: Search by model, lab, framework, risk category, date range
-- **Custom Dashboards**: User-defined views and metric collections
-- **Report Generation**: Export to PDF/CSV with configurable data selection
-- **Annotation System**: Researchers can add context/notes to assessments
-
-### Phase 4: Enterprise Features (Q1-Q2 2027)
-
-- **Multi-tenant Architecture**: Support for teams with role-based access
-- **Webhook Integrations**: Post alerts to Slack, Discord, email
-- **API Endpoints**: RESTful access for external systems
-- **Audit Trails**: Complete logging of data access and modifications
-- **SAML/OAuth**: Enterprise authentication providers
-
-### Phase 5: AI-Powered Insights (Q2-Q3 2027)
-
-- **Natural Language Summaries**: AI-generated risk assessments from raw data
-- **Anomaly Detection**: Identify unusual model behavior or evaluation inconsistencies
-- **Recommendation Engine**: Suggest which models to prioritize monitoring
-- **Chatbot Interface**: Ask questions about risk assessments in natural language
-
-## Deployment
-
-### Quick Start (Local)
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-Opens at `http://localhost:8501`
-
-### Production Deployment
-**Platform**: Streamlit Community Cloud
-
-1. Push repository to GitHub
-2. Connect to `share.streamlit.io`
-3. Add `GEMINI_API_KEY` to Streamlit Cloud Secrets
-4. Deploy automatically
-
 ## Project Structure
 
 ```
@@ -161,7 +117,7 @@ Data contributions welcome:
 - **No Real-time Guarantees**: Data reflects lab publications, not continuous monitoring
 - **Framework Differences**: Scores not directly comparable across labs (different methodologies)
 - **Limited Scope**: Focuses on published evaluations; does not include internal lab assessments
-- **No Endorsement**: Dashboard presents data; does not validate lab claims
+- **No Endorsement**: Dashboard presents data; does not validate lab claims.
 
 ## Technical Stack
 
@@ -174,28 +130,5 @@ Data contributions welcome:
 ## License
 
 MIT License - See LICENSE file for details
-
-## Roadmap Status
-
-✅ **Completed (v2.0)**
-- Multi-lab data integration
-- Deduplication & validation
-- Professional UI
-- Framework consistency enforcement
-- Pagination & visualization
-
-🔄 **In Progress**
-- Documentation
-- Community feedback incorporation
-
-⏳ **Planned**
-- Automated data refresh (Q2 2026)
-- Advanced analytics (Q3 2026)
-- Custom dashboards (Q4 2026)
-- Enterprise features (Q1 2027)
-
----
-
-**Questions?** Open an issue on GitHub or contact the team.
 
 **Last Updated**: February 1, 2026 | **Version**: 2.0.0
